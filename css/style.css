@@ -1,11 +1,12 @@
 @font-face {
     font-family: Montserrat;
+    font-weight: normal;
     src: url("../fonts/Montserrat-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: Montserrat;
-    font-weight: medium;
+    font-weight: bold;
     src: url("../fonts/Montserrat-Medium.otf") format("opentype");
 }
 
@@ -20,12 +21,19 @@
     box-sizing: border-box;
 }
 
+hr {
+    /* width: 250px; */
+    height:2px;
+    background: radial-gradient(#DE5F25,#FFDCB3, #DE5F25);
+    border: none;
+
+}
 
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100%;
 }
 
 :root {
@@ -45,6 +53,26 @@ body {
 p {
     font-family: Montserrat;
     color: #666
+}
+
+.intuitiveLight {
+    font-family: Montserrat;
+    font-weight: light;
+    color: #666;
+    font-size: 1.5em;
+}
+
+.logoText{
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.healingBold {
+    font-family: Montserrat;
+    font-weight: bold;
+    color: #666;
+    font-size: 1.5em;
 }
 
 .w3-container {
