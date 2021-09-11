@@ -21,6 +21,10 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-size: .8em
+}
+
 hr {
     /* width: 250px; */
     height:2px;
@@ -55,24 +59,23 @@ p {
     color: #666
 }
 
+.logoText{
+    text-align: center;
+    margin-top: 5px;
+}
+
 .intuitiveLight {
     font-family: Montserrat;
     font-weight: light;
     color: #666;
-    font-size: 1.5em;
-}
-
-.logoText{
-    text-align: center;
-    margin-top: 10px;
-
+    font-size: 2.5em;
 }
 
 .healingBold {
     font-family: Montserrat;
     font-weight: bold;
     color: #666;
-    font-size: 1.5em;
+    font-size: 2.5em;
 }
 
 .w3-container {
