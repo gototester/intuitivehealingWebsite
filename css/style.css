@@ -1,257 +1,297 @@
-@font-face {
-    font-family: Montserrat;
-    font-weight: normal;
-    src: url("../fonts/Montserrat-Regular.otf") format("opentype");
-}
-
-@font-face {
-    font-family: Montserrat;
-    font-weight: bold;
-    src: url("../fonts/Montserrat-Medium.otf") format("opentype");
-}
-
-@font-face {
-    font-family: Montserrat;
-    font-weight: light;
-    src: url("../fonts/Montserrat-Light.otf") format("opentype");
-}
-
-
-* {
-    box-sizing: border-box;
-}
-
-h1 {
-    font-size: .8em
-}
-
-hr {
-    /* width: 250px; */
-    height:2px;
-    background: radial-gradient(#E83D00,#FF5646, #D62300);
-    border: none;
-
-}
-
-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-}
+/* Variables */
 
 :root {
-    --header-height: 50px;
-    scroll-padding-top: calc(var(--header-height) + 10px);
-    scroll-behavior: smooth;
+  --primary-color: #666;
+  --secondary-color: #b3b3b3;
+  --dark-color: rgb(31, 31, 31);
+  --light-color: #d0d0d0;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
 }
 
+/* reset */
+li {
+  list-style-type: none;
+}
 
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* base styles */
 body {
-    height: 100%;
-    max-width: 1200px;
-    margin: auto;
-    padding-top: 55px;
+  max-width: 1060px;
+  background-color: #fff;
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: var(--dark-color);
+  line-height: 1.5;
+}
+
+.button {
+  margin-top: 20px;
+  background: none;
+  border: 2px solid var(--primary-color);
+  color: var(--dark-color);
+  padding: 3px 8px;
+  border-radius: 10px;
+  /* text-transform: uppercase; */
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+  /* display: inline-block; */
+}
+.button:hover {
+  color: var(--light-color);
+  background-color: var(--dark-color);
+}
+
+input,
+textarea {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 2px solid var(--secondary-color);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+  display: inline-block;
+}
+
+h1,
+h3 {
+  font-size: 1.2em;
 }
 
 p {
-    font-family: Montserrat;
-    color: #666
+  margin: 1em 0;
+  font-size: 1.2em;
+  padding-bottom: 5px;
 }
 
-.logoText{
-    text-align: center;
-    margin-top: 5px;
+img {
+  width: 100%;
+}
+
+.ihBrandText {
+  /* text-align: center !important; */
+  color: #666;
+  font-size: 1.5em;
+}
+
+.ihBrandText hr {
+  margin-bottom: 1em;
 }
 
 .intuitiveLight {
-    font-family: Montserrat;
-    font-weight: light;
-    color: #666;
-    font-size: 2.5em;
+  font-family: Montserrat;
+  font-weight: normal;
 }
 
 .healingBold {
-    font-family: Montserrat;
-    font-weight: bold;
-    color: #666;
-    font-size: 2.5em;
+  font-family: Montserrat;
+  font-weight: bold;
 }
 
-.w3-container {
-    padding-top: 20px;
-    padding-bottom: 20px;
-
+hr {
+  margin-top: 1.2em;
+  width: 100%;
+  height: 2px;
+  background: radial-gradient(#e83d00, #ff5646, #d62300);
+  border: none;
 }
 
-.section .w3-container p {
-    padding-right: 5%;
-    padding-left: 5%;
-    padding-bottom: 10px;
+section {
+  margin: 2em;
+  scroll-margin-top: 2vh;
 }
 
-.navbar {
-    max-width: 1200px;
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    background-color:#314754;
-    color: white;
-    padding: 0px 5px;
+section h1 {
+  text-align: center;
 }
 
-.brand-title {
-    font-size: 1.5rem;
-    margin: .5rem;
+#home h1 {
+  text-align: center;
 }
 
-.navbar-links {
-    height: 100%;
+/* fonts */
+
+@font-face {
+  font-family: Montserrat;
+  font-weight: normal;
+  src: url('../fonts/Montserrat-Regular.otf') format('opentype');
+  font-display: swap;
 }
 
-.navbar-links ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
+@font-face {
+  font-family: Montserrat;
+  font-weight: bold;
+  src: url('../fonts/Montserrat-Medium.otf') format('opentype');
+  font-display: swap;
 }
 
-.navbar-links li {
-    list-style: none;
+@font-face {
+  font-family: Montserrat;
+  font-weight: light;
+  src: url('../fonts/Montserrat-Light.otf') format('opentype');
+  font-display: swap;
 }
 
-.navbar-links li a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
+/* mobile styles  */
+.media {
+  width: 300px;
+  margin: auto;
+  padding-left: 0px;
 }
 
-.navbar-links i {
-    font-size: 25px;
-    margin: 0;
-    padding: 0;
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
 }
 
-.navbar-links li:hover {
-    background-color: #555;
+.site-nav {
+  grid-column: 1/4;
+  grid-row: 1;
+  margin: 0 20px;
 }
 
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
+.site-nav ul {
+  display: none;
 }
 
-#showcase {
-    padding: 20px;
-    background-color: #ffcd00;
-} 
-
-#showcase p {
-    margin: 0px;
-    padding-top: 20px;
-    font-size: 12px;
-    color:#314754;
+#home img {
+  height: 150px;
 }
 
-#about, #sessions, #charges {
-    background-color: #ffcd00;
+#contact {
+  margin-top: 0px;
+  /* padding: 30px 20px; */
 }
 
-.section h2 {
-    margin: 0px;
+#contact a {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
-.section {
-    padding-top: 50px;
-    padding-bottom: 10px;
+#about .media {
+  width: 150px;
 }
 
-.section .fa {
-    font-size: 50px;
-}
-
-.section img {
-    padding: 10%;
-    width: 100%;
-}
-
-.toggle-button {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
+#contact h1,
+#contact p {
+  margin: 5px;
 }
 
 footer {
-    color: white;
-    background-color:#314754;
+  font-size: 1em;
+  text-align: center;
+  padding: 0.5em 0;
+  background-color: var(--primary-color);
+  color: #fff;
+  border-top: 2px solid #ff5646;
 }
 
-footer .fa {
-    padding: 30px 0;
-    font-size: 50px;
-    padding-bottom: 30px;
-    padding-left: 20px;
+#backToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 140, 0, 0.988); /* Set a background color */
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 18px;
 }
 
-@media only screen and (max-width: 700px) {
-    body {
-        padding-top: 55px;
-    }
-
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .toggle-button {
-        display: flex;
-    }
-
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-
-    .navbar-links ul li {
-        text-align: center;
-    }
-
-    .navbar-links ul li a {
-        padding: .5rem 1rem;
-    }
-
-    .navbar-links.active {
-        display: flex;
-    }
-
-    .section img {
-        pointer-events: none;
-    }
-     
-    #about .w3-third {
-        max-width: 500px;
-        padding: 5%;
-        pointer-events: none;
-    } 
+#backToTopBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
 }
 
+/* Small tablet styles */
+@media screen and (min-width: 620px) {
+  body {
+    margin: auto;
+  }
+
+  .media {
+    width: 400px;
+    float: left;
+    margin-right: 1em;
+  }
+
+  p {
+    padding-bottom: 0px;
+  }
+
+  section h1 {
+    text-align: left;
+  }
+
+  #charges img {
+    padding-bottom: 20px;
+  }
+}
+
+/* Large tablets and laptops styles */
+@media screen and (min-width: 960px) {
+  body {
+    font-size: 16px;
+  }
+
+  .grid {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  .site-nav {
+    padding: 20px 0;
+  }
+
+  .site-nav h1 {
+    grid-column: 1/3;
+  }
+
+  .site-nav ul {
+    display: flex;
+    grid-column: 6/9;
+    justify-content: flex-end;
+    align-self: center;
+  }
+
+  .site-nav li {
+    padding-left: 15px;
+  }
+}
+
+/* Desktop styles styles */
+@media screen and (min-width: 1200px) {
+  body {
+    /* font-size: 20px; */
+  }
+
+  .charges-text p {
+    padding-bottom: 20px;
+  }
+
+  /* #charges img {
+    padding-bottom: 50px;
+  } */
+}
