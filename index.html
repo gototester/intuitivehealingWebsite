@@ -9,10 +9,11 @@
     <meta name="Description"
       content="Intuitive Healing">
 
-    <meta http-equiv="Content-Security-Policy" content="script-src 'self'">
+    <!-- <meta http-equiv="Content-Security-Policy" content="script-src 'unsafe-inline'"> -->
 
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="javascript" href="js/helpers.js" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
   </head>
 
   <!-- Navigation  -->
@@ -20,6 +21,10 @@
   <body>
     <nav class="site-nav grid">
       <!-- <h1>IH</h1> -->
+      <!-- <a href="https://www.facebook.com/intuitivehealing.uk/reviews" target="blank"
+        aria-label="link to intuitive healing facebook reviews"><i class="fa fa-facebook-official"
+          aria-hidden="true"></i></a> -->
+
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#sessions">Sessions</a></li>
@@ -28,10 +33,6 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-    <!-- <a href="\#" target="blank"
-        aria-label="link to Intuitive healing facebook site"><i class="fa fa-facebook-official"
-          aria-hidden="true"></i>
-        </a> -->
     <!-- <hr> -->
     <main>
 
@@ -331,27 +332,25 @@
           <a class="button"
             href="mailto:jill@intuitivehealing.uk?subject=Enquiry%20from%20Intuitive%20Healing%20website&body=Please%20Enter%20Your%20Message%20here..."
             aria-label="link to send an email to me">Email Me</a>
-          <!-- Email id: jill[at]intuitivehealing[dot]uk -->
         </p>
-
-        <!-- <form name="contact" method="POST" data-netlify="true">
-          <input type="hidden" name="form-name" value="contact">
-          <input type="text" placeholder="Name" required>
-          <input type="email" placeholder="Email" required>
-          <textarea name="textarea" rows="5" cols="40" placeholder="Your Message" required></textarea>
-          <button class="button">Send Message</button>
-        </form>
-        <hr> -->
+        <p><br />You can also find me on <a
+            href="https://www.facebook.com/intuitivehealing.uk/reviews" target="blank"
+            aria-label="link to intuitive healing facebook reviews">Facebook</a></p>
       </section>
-
-      <button onclick="topFunction()" id="backToTopBtn" title="Go to top">Top</button>
-
     </main>
 
     <!-- Footer -->
     <footer class="footer bg-primary">
+      <!-- <a href="https://www.facebook.com/intuitivehealing.uk/reviews" target="blank"
+        aria-label="link to intuitive healing facebook reviews"><i class="fa fa-facebook-official"
+          aria-hidden="true"></i></a> -->
+      <!-- <a href="https://www.instagram.com/choozinghappy/" target="blank"
+        aria-label="link to Choozing Happy instagram site"><i class="fa fa-instagram" aria-hidden="true"></i></a> -->
       <div>&copy;<span id="year"></span>&nbsp;Intuitive Healing</div>
     </footer>
   </body>
+  <script>
+    document.getElementById('year').innerHTML = new Date().getFullYear();
+  </script>
 
 </html>
